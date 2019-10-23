@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+
+
+{% block content %}
+{% include "nav.html" %}
+
+<div id="daterange"></div>
+
+    
+<input type="text" name="daterange" value="04/06/2019 - 04/15/2018" /> 
+
+<div id="map" style="height:500px; width:900px;"></div>    
+<div id="plot" style="height:500px; width:900px;"></div>
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.5.0/d3.min.js"></script>
+<script type="text/javascript" src="../static/js/app.js"></script>
+<script src="https://cdn.plot.ly/plotly-latest.min.js"></script>   
+
+{% include "footer.html" %}
+{% endblock %}
